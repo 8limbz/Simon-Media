@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="449" height="360" viewBox="0 0 449 360">
+<style>
+@keyframes show {
+	0% { opacity: 0 }
+	100% { opacity: 1; }
+}
+
+.up-tri, .line, .dwn-tri {
+  animation: show 1s ease-in;
+}
+</style>
+<polygon class="line" points="5.4 74.7 5.4 5 68.8 5 221.8 180 353.6 5 443.6 5 443.6 355 355.1 355 355.1 142.7 224.5 311.7 "/><polygon class="up-tri" points="221.8 99 221.8 5 137 5 "/><polygon class="dwn-tri" points="5.4 154.9 5.4 355 185.9 355 "/>
+</svg>
