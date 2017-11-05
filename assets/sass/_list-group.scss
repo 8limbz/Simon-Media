@@ -27,7 +27,10 @@
   // background-color: $list-group-bg;
   // border: 1px solid $list-group-border;
 
-  img { max-width: 46px; }
+  .social-icons {
+	  max-width: 25px;
+	  pointer-events: fill;
+  }
 
   // Round the first and last items
   &:first-child {

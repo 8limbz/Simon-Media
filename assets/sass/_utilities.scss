@@ -53,6 +53,109 @@
   position: fixed;
 }
 
+// -------------------------
 // Added Styles
 // -------------------------
-svg .type-logo{ fill: #fff; }
+
+
+// Nav Functions
+// -------------------------
+#mobile-site-nav {
+	@include transition(bottom 0.333s cubic-bezier(0.14, 0.43, 0.8, 0.96), opacity 0.45s cubic-bezier(0, 0.56, 0.65, 1));
+	box-shadow: 0px -1px 20px rgba(0,0,0,.3) ;
+}
+.mnav-up {
+	opacity: 1;
+}
+.mnav-down {
+	bottom: -71px;
+	opacity: 0;
+}
+
+header {
+	margin-bottom: 40px;
+	background-color: $body-bg;
+	@include transition(top 0.333s cubic-bezier(0.14, 0.43, 0.8, 0.96), opacity 0.45s cubic-bezier(0, 0.56, 0.65, 1));
+	
+	@media (min-width: $screen-sm) { margin-bottom: 40px; }
+}
+
+.nav-down {
+	opacity: 1;
+}
+
+.nav-up {
+    top: -71px;
+	opacity: 0;
+}
+
+.second-nav {
+	margin-right: 0;
+	
+	&li:last-child {
+		padding-right: 0;
+	}
+}
+
+@media (min-width: $screen-sm) {
+	.contact-info {
+//		text-align: center;
+//		
+//		h3 { margin: 0 auto; }
+	}
+}
+
+.crew-img {
+	margin-top: 40px;
+	cursor: pointer;
+	overflow: hidden!important;
+	
+	&:hover .contain-unlock {
+		transform: translateY(30px);
+	}
+	&:hover .contain-social {
+		transform: translateY(-30px);
+		opacity: 1;
+	}
+}
+
+.contain-unlock {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-top: -30px;
+	background-color: rgba(255,255,255,.2);
+	@include transition(transform 300ms);
+	z-index: 2;
+}
+
+.unlock-btn {
+	font-family: $font-family-sans-serif;
+	font-size: 87%;
+	color: rgba(255,255,255,.6);
+	position: absolute;
+	bottom: 6px;
+	left: 50%;
+	margin-left: -31.445px;
+}
+
+.contain-social {
+	opacity: 0;
+	position: relative;
+    margin: 0 auto;
+	top: -46px;
+	@include transition(transform 300ms, opacity 400ms);
+	z-index: 1;
+}
+
+.image-title {
+	margin-top: -66px;
+	float: left;
+}
+
+footer {
+	@media (min-width: $screen-md) {
+		padding-bottom: 20px;
+	}
+}

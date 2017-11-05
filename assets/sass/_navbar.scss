@@ -11,8 +11,8 @@
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: $navbar-margin-bottom;
-  border-bottom: 2px solid $gray-base;
+//  margin-bottom: $navbar-margin-bottom;
+  border-bottom: 1px solid $gray-lighter;
   font-family: $font-family-sans-serif;
 
   // Prevent floats from breaking the navbar
@@ -160,7 +160,7 @@
 
 .navbar-brand {
   float: left;
-  padding: 12px $navbar-padding-horizontal;
+  padding: 15px $navbar-padding-horizontal;
   font-size: $font-size-large;
   line-height: $line-height-computed;
   height: $navbar-height;
@@ -230,11 +230,12 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
+//  margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
+	margin: 0;
 
   > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
+    padding-top:    $navbar-padding-vertical;
+    padding-bottom: $navbar-padding-vertical;
     line-height: $line-height-computed;
   }
 
@@ -267,12 +268,12 @@
     float: left;
     margin: 0;
 
-    > li {
-      > a {
-        padding-top:    $navbar-padding-vertical;
-        padding-bottom: $navbar-padding-vertical;
-      }
-    }
+//    > li {
+//      > a {
+//        padding-top:    $navbar-padding-vertical;
+//        padding-bottom: $navbar-padding-vertical;
+//      }
+//    }
   }
 }
 

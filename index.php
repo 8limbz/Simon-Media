@@ -1,121 +1,61 @@
 <!doctype html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="We're a team of designers that work with you to create a clean, crisp, quality foundation for your head.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simon Media</title>
-    <!-- Page styles -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet">
-
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
-
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Simon Media">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Simon Media">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#000">
-
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#000">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-  </head>
-  <body>
-    <!-- Site Wrapper -->
-    <div class="container">
-      <!-- Header w/ Navigation -->
-      <header>
-        <!-- Mobile Bottom  Navigation -->
-        <nav class="hidden-md hidden-lg navbar navbar-default navbar-fixed-bottom">
-          <div id="mobile-site-nav">
-            <ul class="nav nav-justified">
-              <li><a class="text-uppercase" href="#">about</a></li>
-              <li><a class="text-uppercase" href="#">work</a></li>
-              <li><a class="text-uppercase" href="#">studios</a></li>
-              <li><a class="text-uppercase" href="#">contact</a></li>
-            </ul>
-          </div>
-        </nav>
-
-        <!-- Desktop Navigation -->
-        <nav class="navbar">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a href="#" class="navbar-brand"><img src="images/sm_logo.svg" alt="Simon Media Logo"></a>
-            </div>
-            <div class="hidden-xs hidden-sm">
-              <ul class="nav navbar-nav">
-                <li><a class="text-uppercase" href="#">about</a></li>
-                <li><a class="text-uppercase" href="#">work</a></li>
-                <li><a class="text-uppercase" href="#">studios</a></li>
-                <li><a class="text-uppercase" href="#">contact</a></li>
-              </ul>
-            </div>
-            <div class="pull-right">
-              <ul class="nav navbar-nav">
-                <li><a class="text-uppercase" href="#">blog</a></li>
-                <li><a class="text-uppercase" href="#">shop</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </header>
-      <!-- Intro Section -->
-      <section id="intro">
-        <div class="container">
-          <div class="row">
-            <div class="intro">
-              <img class="img-responsive col-sm-6 col-lg-7" src="images/portfolio/feature-1.jpg" alt="intro image">
-              <div class="intro col-sm-6 col-lg-5">
-                <h3 class="small text-uppercase">a branding studio</h3>
-                <h1>See it happen. Create your ideas.</h1>
-                <p>We're a team of designers that work with you to create a clean, crisp, quality foundation for your head.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr></hr>
-      <!-- Work Section -->
-      <section id="work">
-        <div class="container">
+<html lang="eng">
+<head>
+<title>Simon Media</title>
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php'); ?>	
+</head>
+  
+<body>
+<!-- Site Wrapper -->
+<div class="container">
+   
+    <?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/includes/header.php'); ?>
+      
+    <!-- Intro Section -->
+    <section id="hp-intro">
+    	<div class="row">
+			<img class="img-responsive col-md-6 col-lg-8" src="http://via.placeholder.com/1880x1200" alt="Simon Media Home Page">
+			<div class="col-md-6 col-lg-4 contact-info">
+				<h3 class="small text-uppercase">a branding studio</h3>
+				<h1  class="text-capitalize">see it happen. create your ideas.</h1>
+				<p>We're a team of designers that work with you to create a clean, crisp, quality foundation for your head.</p>
+			</div>
+		</div>
+    </section>
+    <!-- End Intro Section -->
+    
+    <hr><!-- Page Break -->
+      
+    <!-- Work Section -->
+    <section id="work">
 
           <div class="row">
-            <div class="col-md-8">
-              <div style="margin-bottom: 20px;" class="featured-client">
-                <img src="images/portfolio/feature-1.jpg" alt="#" class="img-responsive featured">
+          	<div class="contact-info col-md-8">
+				<h3 class="small text-uppercase">featured projects</h3>
+				<h1 class="text-capitalize">work</h1>
+			</div>
+           
+            <div class="col-md-8"> 
+              <div class="featured-client">
+                <img src="http://via.placeholder.com/1830x1710" alt="#" class="img-responsive featured" style="margin-bottom: 30px;">
               </div>
             </div>
             <div class="col-md-4">
               <div class="client">
-                <img src="images/portfolio/work-example.jpg" alt="#" class="img-responsive">
+               <img src="http://via.placeholder.com/1830x1710" alt="#" class="img-responsive" style="margin-bottom: 30px;">
+                
+<!--
                 <h3>Client Work</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+-->
               </div>
               <div class="client">
-                <img src="images/portfolio/work-example.jpg" alt="#" class="img-responsive">
+               <img src="http://via.placeholder.com/1830x1710" alt="#" class="img-responsive">
+                
+<!--
                 <h3>Client Work</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+-->
               </div>
             </div>
           </div>
@@ -123,106 +63,108 @@
           <div class="row">
             <div class="col-md-4">
               <div class="client">
-                <img src="images/portfolio/work-example.jpg" alt="#" class="img-responsive">
+              	<img src="http://via.placeholder.com/1830x1710" alt="#" class="img-responsive">
+<!--                <img src="http://via.placeholder.com/870x498" alt="#" class="img-responsive">-->
+<!--
                 <h3>Client Work</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+-->
               </div>
             </div>
             <div class="col-md-4">
               <div class="client">
-                <img src="images/portfolio/work-example.jpg" alt="#" class="img-responsive">
+              	<img src="http://via.placeholder.com/1830x1710" alt="#" class="img-responsive">
+<!--
                 <h3>Client Work</h3>
                 <p>Itaque, iusto. Soluta provident a eveniet excepturi earum!</p>
+-->
               </div>
             </div>
             <div class="col-md-4">
               <div class="client">
-                <img src="images/portfolio/work-example.jpg" alt="#" class="img-responsive">
+              	<img src="http://via.placeholder.com/1830x1710" alt="#" class="img-responsive">
+<!--
                 <h3>Client Work</h3>
                 <p>Architecto fuga necessitatibus explicabo sequi, volupta!</p>
+-->
               </div>
             </div>
           </div>
 
-        </div>
-      </section>
-      <hr></hr>
-      <!-- Newsletter Section -->
-      <section id="newsletter">
-        <div class="container">
+    </section>
+    <!-- End Work Section -->
+      
+    <hr><!-- Page Break -->
+      
+    <!-- Newsletter Section -->
+    <section id="newsletter">
           <div class="row">
-            <img class="img-responsive col-md-8 col-lg-7" src="images/portfolio/feature-1.jpg" alt="Simon Media Newsletter">
-            <div class="newsletter-info col-md-4 col-lg-5">
+            <img class="img-responsive col-sm-6 col-lg-8" src="http://via.placeholder.com/1830x1710" alt="Simon Media Newsletter">
+            <div class="newsletter-info col-sm-6 col-lg-4">
               <h3 class="small text-uppercase">subscribe</h3>
               <h1 class="text-capitalize">join the newsletter</h1>
               <button class="btn btn-default text-uppercase">subscribe</button>
             </div>
           </div>
-        </div>
-      </section>
-      <hr></hr>
-      <!-- Contact Section -->
-      <section id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="contact-info col-md-offset-3 col-md-6">
-              <h3 class="small text-uppercase">contact</h3>
-              <h1 class="text-capitalize">get in touch</h1>
-            </div>
-            <div class="form-container col-md-offset-3 col-md-6">
-              <form action="" id="smForm"><!-- Contact Form -->
-                <div class="form-group">
-                  <label for="name">name</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required="required"></input>
-                </div>
-                <div class="form-group">
-                  <label for="">email</label>
-                  <input type="email" name="email" class="form-control" placeholder="Enter email" required="required"></input>
-                </div>
-                <div class="form-group">
-                  <label for="message">message</label>
-                  <textarea name="message" class="form-control" id="message" rows="3" placeholder="Enter message"></textarea>
-                </div>
-                <button class="btn btn-default text-uppercase">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr></hr>
-      <!-- Footer -->
-      <section id="footer">
-        <footer class="container">
-          <div class="row">
-            <div class="social">
-              <ul class="list-group">
-                <li class="list-group-item"><a href=""><img src="" alt=""></a></li>
-                <li class="list-group-item"><a href=""><img src="" alt=""></a></li>
-                <li class="list-group-item"><a href=""><img src="" alt=""></a></li>
-              </ul>
-            </div>
-            <div class="copyrights">&copy;Simon Media 2017</div>
-          </div>
-        </footer>
-      </section>
-
+    </section>
+    <!-- End Newsletter Section -->
       
+    <hr><!-- Page Break -->
+      
+    <!-- Contact Section -->
+	<section id="contact">
+			<div class="row">
+				<div class="contact-info col-md-8">
+					<h3 class="small text-uppercase">contact</h3>
+					<h1 class="text-capitalize">get in touch</h1>
+				</div>
+				<div class="clearfix"></div>
+				<div class="form-container col-md-8">
+					<form id="form14" name="form14" class="" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://s1mon.wufoo.com/forms/zv9dsiq02w8wrf/#public">
+				  
+				  	<div class="row">
+					  <div id="foli9" class="col-sm-6 form-group">
+						<label id="title9" for="Field9">
+						  Name<span id="req_9" class="req">*</span>
+						</label>
+						<input id="Field9" name="Field9" type="text" class="form-control" value="" size="8" tabindex="1" placeholder="Enter Name"       required />
+					  </div>
+					  <div id="foli3" class="col-sm-6 form-group">
+						<label class="desc" id="title3" for="Field3">
+						  Email<span id="req_3" class="req">*</span>
+						</label>
+						<input id="Field3" name="Field3" type="email" spellcheck="false" class="medium form-control" value="Enter Email" maxlength="255" tabindex="3"       placeholder="" required />
+					  </div>				  		
+				  	</div>
+				  	
+					  <div id="foli4" class="form-group">
+						<label class="desc" id="title4" for="Field4">
+						  Message<span id="req_4" class="req">*</span>
+						</label>
+						<textarea id="Field4" name="Field4" class="textarea form-control" spellcheck="true" rows="10" cols="50" tabindex="4" onkeyup="" placeholder="" required  >Enter Message</textarea>
+					  </div>
+					  
+					  <div class="row">
+						  <div class="col-md-8">
+							<input id="saveForm" name="saveForm" class="btn btn-default text-uppercase" type="submit" value="Submit" />
+						  </div>			  	
+					  </div>
 
-      <!-- build:js scripts/main.min.js -->
-      <script src="scripts/main.js"></script>
-      <!-- endbuild -->
+					  <div class="hide">
+						<label for="comment">Do Not Fill This Out</label>
+						<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+						<input type="hidden" id="idstamp" name="idstamp" value="CavNFrZiHpnfuoJQgaC2mr7cNJ6sTmgQR78j0AjLlA8=" />
+					  </div>
 
-      <!-- Google Analytics -->
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-77337091-1', 'auto');
-        ga('require', 'displayfeatures');
-        ga('require', 'linkid');
-        ga('send', 'pageview');
-      </script>
+					</form>
+				</div>
+			</div>
+	</section>
+    <!-- End Contact Section -->
+      
+<!-- Footer -->
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php'); ?>
+   
     </div>
   </body>
 </html>

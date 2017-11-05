@@ -25,11 +25,18 @@ html {
 }
 
 body {
+  padding: 0 $navbar-padding-horizontal $navbar-padding-vertical $navbar-padding-horizontal;
+  margin-bottom: $navbar-padding-vertical;
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
+	
+	@media (min-width: $screen-sm){
+		margin-top: 71px;
+		padding: 40px 0 0 0;
+	}
 }
 
 // Reset fonts for relevant elements
@@ -68,6 +75,9 @@ a {
 
 figure {
   margin: 0;
+}
+figcaption {
+	font-family: $font-family-sans-serif;
 }
 
 
